@@ -26,8 +26,9 @@ const App = () => {
       params.locale ? `&locale=${params.locale}` : ""
     }${params.pair ? `&pair=${params.pair}` : ""}${
       params.toolbar_bg ? `&toolbar_bg=${params.toolbar_bg}` : ""
-    }${params.width ? `&width=${params.width}` : ""}    `
+    }${params.width ? `&width=${params.width}` : ""}`
   }
+
   dispatch(updateUrl(generateUrl(params)))
 
   return `Generated the url: ${url}`
